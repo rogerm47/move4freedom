@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move 4 Freedom AI - AI Automation for Your Business</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .hero-bg-en {
+            background: linear-gradient(to right, #4f46e5, #3b82f6); /* Indigo to Blue gradient */
+        }
+        .cta-button-en {
+            transition: all 0.3s ease;
+        }
+        .cta-button-en:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+        .service-card-en {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card-en:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(66, 153, 225, 0.25);
+        }
+        .glow-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        .glow-effect::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 250%;
+            height: 250%;
+            background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 60%);
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.6s ease;
+            pointer-events: none;
+        }
+        .glow-effect:hover::before {
+            opacity: 1;
+        }
+        .section-title-en {
+            font-weight: 800;
+        }
+        .subtle-glow-text {
+            text-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <nav class="bg-gray-800/80 backdrop-blur-lg shadow-xl fixed w-full z-50 top-0">
+        <div class="container mx-auto px-6 py-3.5 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-white">
+                Move<span class="text-blue-400 subtle-glow-text">4</span>Freedom
+            </a>
+            <div class="hidden md:flex space-x-5 items-center">
+                <a href="#solutions" class="text-gray-300 hover:text-blue-400 transition-colors px-2 py-1">Solutions</a>
+                <a href="#process" class="text-gray-300 hover:text-blue-400 transition-colors px-2 py-1">Our Process</a>
+                <a href="#why-us" class="text-gray-300 hover:text-blue-400 transition-colors px-2 py-1">Why Us</a>
+                <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2.5 px-6 rounded-lg cta-button-en text-sm">Get Started</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 border-t border-gray-700">
+            <a href="#solutions" class="block py-3 px-6 text-gray-300 hover:bg-gray-700 hover:text-blue-400 transition-colors">Solutions</a>
+            <a href="#process" class="block py-3 px-6 text-gray-300 hover:bg-gray-700 hover:text-blue-400 transition-colors">Our Process</a>
+            <a href="#why-us" class="block py-3 px-6 text-gray-300 hover:bg-gray-700 hover:text-blue-400 transition-colors">Why Us</a>
+            <a href="#contact" class="block py-3.5 px-6 text-white bg-blue-500 hover:bg-blue-600 text-center rounded-b-lg font-semibold">Get Started</a>
+        </div>
+    </nav>
+
+    <header class="hero-bg-en text-white pt-36 pb-24 md:pt-48 md:pb-36 glow-effect">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Automate Your Business. <span class="block md:inline">Reclaim Your <span class="text-blue-300 subtle-glow-text">Freedom</span>.</span>
+            </h1>
+            <p class="text-md sm:text-lg md:text-xl text-gray-200 mb-10 max-w-xl mx-auto">
+                Tailored AI solutions (with <strong class="text-blue-200 font-semibold">n8n</strong> & more) to streamline work, boost profits, and save your time.
+            </p>
+            <a href="#contact" class="bg-white hover:bg-gray-200 text-blue-600 font-bold py-3.5 px-10 rounded-lg text-md sm:text-lg cta-button-en shadow-xl">
+                Schedule a Free Call
+            </a>
+        </div>
+    </header>
+
+    <section class="py-16 md:py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title-en text-3xl md:text-4xl text-center mb-4 text-white">Escape Repetitive Task Overload.</h2>
+            <p class="text-center text-gray-400 mb-10 md:mb-14 max-w-2xl mx-auto text-md sm:text-lg">
+                Imagine: AI handles tedious tasks, your team focuses on growth. We make it real.
+            </p>
+            <div class="grid md:grid-cols-2 gap-6 md:gap-8 items-stretch">
+                <div class="bg-gray-700/80 p-6 md:p-8 rounded-xl shadow-2xl border border-gray-600/50">
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-red-400">The Old Way: Manual Grind</h3>
+                    <ul class="space-y-2.5 text-gray-300 text-sm sm:text-base">
+                        <li class="flex items-start"><svg class="w-5 h-5 text-red-400 mr-2.5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L10 8.586 7.707 6.293a1 1 0 00-1.414 1.414L8.586 10l-2.293 2.293a1 1 0 001.414 1.414L10 11.414l2.293 2.293a1 1 0 001.414-1.414L11.414 10l2.293-2.293z" clip-rule="evenodd"></path></svg>Hours wasted on data entry.</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-red-400 mr-2.5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L10 8.586 7.707 6.293a1 1 0 00-1.414 1.414L8.586 10l-2.293 2.293a1 1 0 001.414 1.414L10 11.414l2.293 2.293a1 1 0 001.414-1.414L11.414 10l2.293-2.293z" clip-rule="evenodd"></path></svg>Operational chaos & frequent errors.</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-red-400 mr-2.5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L10 8.586 7.707 6.293a1 1 0 00-1.414 1.414L8.586 10l-2.293 2.293a1 1 0 001.414 1.414L10 11.414l2.293 2.293a1 1 0 001.414-1.414L11.414 10l2.293-2.293z" clip-rule="evenodd"></path></svg>Limited growth potential.</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-red-400 mr-2.5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L10 8.586 7.707 6.293a1 1 0 00-1.414 1.414L8.586 10l-2.293 2.293a1 1 0 001.414 1.414L10 11.414l2.293 2.293a1 1 0 001.414-1.414L11.414 10l2.293-2.293z" clip-rule="evenodd"></path></svg>Team fatigue & low morale.</li>
+                    </ul>
+                </div>
+                <div class="bg-blue-600 p-6 md:p-8 rounded-xl shadow-2xl glow-effect border border-blue-500/70">
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-white">With Move<span class="text-blue-300">4</span>Freedom AI: The Modern Way</h3>
+                     <ul class="space-y-2.5 text-blue-100 text-sm sm:text-base">
+                        <li class="flex items-start"><svg class="w-5 h-5 text-green-300 mr-2.5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Automated processes running 24/7.</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-green-300 mr-2.5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Increased efficiency & zero mistakes.</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-green-300 mr-2.5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Easy adaptation to business growth.</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-green-300 mr-2.5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Motivated team, important tasks.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="py-16 md:py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title-en text-3xl md:text-4xl text-center mb-10 md:mb-14 text-white">Our Core AI Solutions</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl shadow-xl service-card-en glow-effect border border-gray-700/70">
+                    <div class="flex items-center justify-center w-14 h-14 bg-blue-500/20 rounded-full mb-5 border border-blue-400/80">
+                        <svg class="w-7 h-7 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-2.5 text-white">AI Workflow Automation</h3>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">We create systems (n8n, AI) for data automation, communication, reports, and other tasks.</p>
+                </div>
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl shadow-xl service-card-en glow-effect border border-gray-700/70">
+                     <div class="flex items-center justify-center w-14 h-14 bg-blue-500/20 rounded-full mb-5 border border-blue-400/80">
+                        <svg class="w-7 h-7 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-2.5 text-white">Intelligent Document Processing</h3>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">Automated reading and data management from invoices, contracts, etc. Fewer errors!</p>
+                </div>
+                <div class="bg-gray-800 p-6 md:p-8 rounded-xl shadow-xl service-card-en glow-effect border border-gray-700/70">
+                    <div class="flex items-center justify-center w-14 h-14 bg-blue-500/20 rounded-full mb-5 border border-blue-400/80">
+                        <svg class="w-7 h-7 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5a4 4 0 014 4v5a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zm0 0v.01"></path></svg>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-2.5 text-white">Custom AI Assistants</h3>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">Need AI help? We'll build it for you: from customer service to data analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-16 md:py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title-en text-3xl md:text-4xl text-center mb-10 md:mb-14 text-white">Our Simple Path to Automation</h2>
+            <div class="grid md:grid-cols-3 gap-6 md:gap-8 text-center">
+                <div class="p-4 md:p-6">
+                    <div class="flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-gray-700 border-2 border-blue-500 rounded-full mx-auto mb-5 text-blue-300 text-2xl sm:text-3xl font-bold">1</div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-1.5 text-white">Discover & Plan</h3>
+                    <p class="text-gray-400 text-sm sm:text-base">We analyze your work and goals. Find the best spots for automation.</p>
+                </div>
+                <div class="p-4 md:p-6">
+                    <div class="flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-gray-700 border-2 border-blue-500 rounded-full mx-auto mb-5 text-blue-300 text-2xl sm:text-3xl font-bold">2</div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-1.5 text-white">Design & Build</h3>
+                    <p class="text-gray-400 text-sm sm:text-base">We create an AI solution (with n8n) perfect for you. Effective and modern.</p>
+                </div>
+                <div class="p-4 md:p-6">
+                    <div class="flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-gray-700 border-2 border-blue-500 rounded-full mx-auto mb-5 text-blue-300 text-2xl sm:text-3xl font-bold">3</div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-1.5 text-white">Implement & Improve</h3>
+                    <p class="text-gray-400 text-sm sm:text-base">We launch, train, and ensure everything works perfectly for your freedom.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="py-16 md:py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-10 md:mb-14">
+                <h2 class="section-title-en text-3xl md:text-4xl text-white">Why Us? Move<span class="text-blue-400 subtle-glow-text">4</span>Freedom AI</h2>
+                <p class="text-gray-400 mt-3 max-w-xl mx-auto text-md sm:text-lg">We're your partner on the road to peak efficiency and true business freedom.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div class="md:pr-6">
+                    <img src="https://placehold.co/600x450/1f2937/3b82f6?text=AI+Experts+at+Work" alt="AI automation experts at work" class="rounded-xl shadow-2xl w-full object-cover">
+                </div>
+                <div class="space-y-5 md:space-y-6">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-blue-500/20 text-blue-300 rounded-full flex items-center justify-center border border-blue-500/80">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <div class="ml-3 sm:ml-4">
+                            <h4 class="text-lg sm:text-xl font-semibold text-white">n8n & AI Know-How</h4>
+                            <p class="text-gray-400 text-sm sm:text-base">We know n8n and AI inside out. We build solid, smart automations.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-blue-500/20 text-blue-300 rounded-full flex items-center justify-center border border-blue-500/80">
+                           <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                        </div>
+                        <div class="ml-3 sm:ml-4">
+                            <h4 class="text-lg sm:text-xl font-semibold text-white">Solutions Tailored to You</h4>
+                            <p class="text-gray-400 text-sm sm:text-base">No two businesses are alike. We create solutions just for YOU.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-blue-500/20 text-blue-300 rounded-full flex items-center justify-center border border-blue-500/80">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div class="ml-3 sm:ml-4">
+                            <h4 class="text-lg sm:text-xl font-semibold text-white">Your Freedom is Key</h4>
+                            <p class="text-gray-400 text-sm sm:text-base">Our goal: free you from tedious tasks so you can grow your business and enjoy life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-20 bg-blue-600 text-white glow-effect">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="section-title-en text-3xl md:text-4xl mb-5">Unlock Your Business Potential!</h2>
+            <p class="text-md sm:text-lg text-blue-100 mb-8 md:mb-10 max-w-lg mx-auto">Let's discuss how AI automation will change your business. Schedule your free, no-obligation call.</p>
+            
+            <div class="max-w-md mx-auto bg-gray-800/60 backdrop-blur-md p-6 md:p-8 rounded-xl shadow-2xl border border-gray-700/50">
+                <form action="#" method="POST"> <div class="mb-4">
+                        <label for="full_name" class="block text-sm font-medium text-blue-200 text-left mb-1">Full Name</label>
+                        <input type="text" name="full_name" id="full_name" required class="block w-full px-3.5 py-2.5 bg-gray-700/80 border border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 sm:text-sm text-white placeholder-gray-400" placeholder="e.g., John Doe">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email_address" class="block text-sm font-medium text-blue-200 text-left mb-1">Email Address</label>
+                        <input type="email" name="email_address" id="email_address" required class="block w-full px-3.5 py-2.5 bg-gray-700/80 border border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 sm:text-sm text-white placeholder-gray-400" placeholder="you@example.com">
+                    </div>
+                    <div class="mb-5">
+                        <label for="message" class="block text-sm font-medium text-blue-200 text-left mb-1">How can we help?</label>
+                        <textarea name="message" id="message" rows="3" required class="block w-full px-3.5 py-2.5 bg-gray-700/80 border border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 sm:text-sm text-white placeholder-gray-400" placeholder="Briefly describe your needs..."></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full bg-white hover:bg-gray-200 text-blue-600 font-bold py-3 px-6 rounded-lg cta-button-en text-md sm:text-lg shadow-lg">
+                            Send & Schedule Free Consultation
+                        </button>
+                    </div>
+                </form>
+                <p class="mt-6 text-xs sm:text-sm text-blue-200">Or email us: <a href="mailto:hello@move4freedom.ai" class="text-blue-100 hover:text-white font-semibold underline">hello@move4freedom.ai</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-500 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <a href="#" class="text-2xl font-bold text-gray-300 hover:text-white transition-colors">
+                Move<span class="text-blue-400 subtle-glow-text">4</span>Freedom
+            </a>
+            <p class="mt-3 text-sm">&copy; <span id="currentYear"></span> Move 4 Freedom. All rights reserved.</p>
+            <p class="text-xs mt-1.5">Empowering businesses with AI-driven freedom.</p>
+            </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Smooth scroll for navigation links & close mobile menu on click
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Set current year in footer
+        const currentYearElement = document.getElementById('currentYear');
+        if (currentYearElement) {
+            currentYearElement.textContent = new Date().getFullYear();
+        }
+    </script>
+
+</body>
+</html>
